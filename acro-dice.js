@@ -6,9 +6,12 @@ function Limb(singular, plural, enabled) {
 
 function defaultLimbs() {
 	return [
-		new Limb("Fuß" , "Füße" , true),
-		new Limb("Hand", "Hände", true),
-		new Limb("Kopf", "Köpfe", true),
+		new Limb("Kopf"    , "Köpfe"    , true),
+		new Limb("Hand"    , "Hände"    , true),
+		new Limb("Schulter", "Schultern", true),
+		new Limb("Hüfte"   , "Hüften"   , true),
+		new Limb("Knie"    , "Knie"     , true),
+		new Limb("Fuß"     , "Füße"     , true),
 	]
 }
 
@@ -120,8 +123,8 @@ function generateTask() {
 document.getElementById('limb-plus'    ).addEventListener('click', increaseLimbCount);
 document.getElementById('limb-minus'   ).addEventListener('click', decreaseLimbCount);
 document.getElementById('generate-task').addEventListener('click', generateTask);
-document.getElementById("config-button").addEventListener('click', configButton);
-document.getElementById("ok-button"    ).addEventListener('click', okButton);
+//document.getElementById("config-button").addEventListener('click', configButton);
+//document.getElementById("ok-button"    ).addEventListener('click', okButton);
 
 updateLimbCount();
 generateTask();
