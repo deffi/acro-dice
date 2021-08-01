@@ -91,7 +91,7 @@ function formatTask(limbs, limbCount) {
 
             var countCell = document.createElement("td");
             countCell.className = "count";
-            countCell.textContent=count;
+            countCell.textContent=count + " ";
             row.append(countCell);
 
             var limbCell = document.createElement("td");
